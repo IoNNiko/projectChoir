@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Χορωδία «Ορφέας» Αγρινίου</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="icon" type="text/css" href="favicon.io.png">
+</head>
+<body>
+	<header>
+		<a href="#" class=logo><img src="images/logo.png" height="30px" width="30px"></a>
+	
+	<nav>
+		
+		<ul>
+			<li><a href="index.html">ΑΡΧΙΚΗ</a></li>
+			<li><a href="information.html">ΠΛΗΡΟΦΟΡΙΕΣ</a></li>
+			<li><a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+		</ul>
+	</nav>
+	</header>
+
+	<div class="wrapper">
+		<section class="photo"> 
+			<div class="inner"> 
+				<div class="clipper">
+			<h1>ΧΟΡΩΔΙΑ «ΟΡΦΕΑΣ» ΑΓΡΙΝΙΟΥ</h1>
+				</div>
+			
+			<div class="anim-panel"> 
+
+			<p> Ο μουσικός σύλλογος Αγρινίου «ΟΡΦΕΥΣ» είναι ο παλαιότερος πολιτιστικός σύλλογος της πόλης και της περιοχής.Σύμφωνα με το καταστατικό του σκοπεύει με ποικίλες δραστηριότητες να ανεβάσει το μουσικό και πολιτιστικό επίπεδο των κατοίκων της πόλης και της ευρύτερης αιτωλοακαρνανικής περιοχής. [..] Ο Ορφέας διατηρεί πολυμελή χορωδία που την αποτελούν Αγρινιώτες και Αγρινιώτισσες που αγαπούν το χορωδιακό τραγούδι, αφού το Αγρίνιο έχει μακρά και πετυχημένη χορωδιακή παράδοση. Αυτή η χορωδία έχει δώσει εντυπωσιακά δείγματα χορωδιακής τέχνης εντός και εκτός πόλεως. Μέλημα του συλλόγου είναι πάντα η οργάνωση καλλιτεχνικών εκδηλώσεων μπροστά σε ένα πυκνό ακροατήριο που χειροκροτεί την υψηλή στάθμη του ακροάματος. Αυτός είναι ο σύλλογος και προσπαθεί να φανεί αντάξιος της αγάπης που τρέφουν γι' αυτόν οι συμπολίτες του.  </p> ΑΘΑΝΑΣΙΟΣ ΡΟΝΤΙΡΗΣ<p>
+			<a href="https://www.youtube.com/watch?v=3Jbdwk9G3CY">Πηγή</a>
+			
+			
+		    </div>
+			 </div>
+		</section>
+		<section class="sidebar"> 
+			<div class="inner">
+				<div class="clipper">
+				<h2> Ρεπερτoριο</h2>
+			
+			<div class="anim-panel"> 
+			<p> To ευρύ ρεπερτόριο της χορωδίας περιλαμβάνει τραγούδια της κλασικής, παραδοσιακής, θρησκευτικής, έντεχνης και λαϊκής μουσικής καταξιωμένων συνθετών. Την ευθύνη της καλλιτεχνικής επιμέλειας και διδασκαλίας έχει η μαέστρος κα Άννα Πανοπούλου.</p>
+			<br> 
+            <br>
+            <br>
+            <a href="#">ΝΕΑ ΜΕΛΗ </a>
+			<p> Η χορωδία απευθύνεται σε πολίτες με αγάπη για τη μουσική. Δεν είναι υποχρεωτική η γνώση μουσικού οργάνου ή θεωρίας της μουσικής. Περισσότερες λεπτομέριες μπορείτε να δείτε στις ΠΛΗΡΟΦΟΡΙΕΣ  της σελίδας.</p>
+				
+			</div>
+		</section>
+		<section class="subscribe"> 
+			<div class="inner">
+				<div class="clipper">
+					<h2>ΣΥΝΔΕΣΗ</h2>
+				
+				<div class="anim-panel"> 
+			<p> (Για τα ενεργά μέλη της χορωδίας)</p>
+			</div>
+			<input type="text" name="key" placeholder="κωδικός">
+			<button class="cta">ΣΥΝΔΕΣΗ</button>
+            
+			</section>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function(event) {
+		});
+
+		window.addEventListener("load", function(e){
+
+			document.body.style. display= "block";
+
+			var tl= new TimelineMax();
+
+		tl.staggerFrom ('section', 2, {
+			opacity:0,
+			scale: .5,
+			ease: Power2.easeOut
+		}, 0.2)
+		tl.staggerFrom('h1, h2',.5, {
+			opacity: 0,
+			y: -40,
+			ease:Power2.easeInOut
+		}, 0.2, "-=2")
+
+		tl.staggerFrom('.anim-panel', 1, {
+			opacity: 0,
+			y: -40,
+			ease:Power2.easeInOut
+		}, 0.2, "-=1.5")
+
+
+		}, false);
+
+
+	</script>
+
+</body>
+
+</html>

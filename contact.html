@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Χορωδία «Ορφέας» Αγρινίου</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="icon" type="text/css" href="favicon.io.png">
+
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+	<header>
+		<a href="#" class=logo><img src="images/logo.png" height="30px" width="30px"></a>
+	
+	<nav>
+		
+		<ul>
+			<li><a href="index.html">ΑΡΧΙΚΗ</a></li>
+			<li><a href="information.html">ΠΛΗΡΟΦΟΡΙΕΣ</a></li>
+			<li><a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+		</ul>
+	</nav>
+	</header>
+
+	<div class="wrapper">
+		<section class="photo"> 
+			<div class="inner"> 
+				<div class="clipper">
+			        <h1>ΧΟΡΩΔΙΑ «ΟΡΦΕΑΣ» ΑΓΡΙΝΙΟΥ</h1>
+			
+                    <form action="">
+                        <div class="title">
+                          <h2>ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ</h2>
+                        </div>
+                        <div class="half">
+                          <div class="item">
+                            <label for="name">ΟΝΟΜΑΤΕΠΩΝΥΜΟ</label>
+                            <input type="text" id = "name">
+                          </div>
+                          <div class="item">
+                            <label for="email">EMAIL</label>
+                            <input type="text" id = "email">
+                          </div>
+                        </div>
+                        <div class="full">
+                          <label for="message">ΚΕΙΜΕΝΟ</label>
+                          <textarea name="" id = "message"></textarea>
+                        </div>
+                        <div class="action">
+                          <input type="submit" value = "SEND MESSAGE">
+                          <input type="reset" value = "RESET">
+                        </div>
+                        
+                      </form>
+                </div>
+			
+		
+			 </div>
+		    </section>
+		<section class="sidebar"> 
+			<div class="inner">
+				<div class="clipper">
+				<h2> ΔΙΕΥΘΥΝΣΗ</h2>
+			
+			<div class="anim-panel"> 
+			<p> Πρώην σιδηροδρομικός σταθμός Αγρινίου</p>
+            <p>Μαβίλη 10</p>
+            <p>TK 30131</p>
+            <p>Τηλέφωνο:1234567890</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d577.3682763323881!2d21.40739535394172!3d38.62174299999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135e61f78ba3efaf%3A0x612c4bdb49fada62!2zzqDPgc-OzrfOvSDOo865zrTOt8-Bzr_OtM-Bzr_OvM65zrrPjM-CIM6jz4TOsc64zrzPjM-CIM6RzrPPgc65zr3Or86_z4U!5e1!3m2!1sel!2sgr!4v1662908817680!5m2!1sel!2sgr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				
+			</div>
+		</section>
+		
+            
+			
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function(event) {
+		});
+
+		window.addEventListener("load", function(e){
+
+			document.body.style. display= "block";
+
+			var tl= new TimelineMax();
+
+		tl.staggerFrom ('section', 2, {
+			opacity:0,
+			scale: .5,
+			ease: Power2.easeOut
+		}, 0.2)
+		tl.staggerFrom('h1, h2',.5, {
+			opacity: 0,
+			y: -40,
+			ease:Power2.easeInOut
+		}, 0.2, "-=2")
+
+		tl.staggerFrom('.anim-panel', 1, {
+			opacity: 0,
+			y: -40,
+			ease:Power2.easeInOut
+		}, 0.2, "-=1.5")
+
+
+		}, false);
+
+
+	</script>
+
+</body>
+
+</html>
